@@ -7,6 +7,8 @@ void cadastrarFuncionario({required String nome, String? cargo}){
   }
 }
 void main(){
-  cadastrarFuncionario(nome: "Ana", cargo: "Analista");
-  cadastrarFuncionario(nome: "Carlos");
+  stdout.write('Digite seu nome: ');
+  String nome = stdin.readLineSync()!;
+  stdout.write('Digite seu cargo(opcional): ');
+  String? cargo = stdin.readLineSync();
 }
